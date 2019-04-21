@@ -1,0 +1,6 @@
+framework module Pods_SmartMobeImages {
+  umbrella header "Pods-SmartMobeImages-umbrella.h"
+
+  export *
+  module * { export * }
+}
