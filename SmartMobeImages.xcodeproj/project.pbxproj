@@ -16,6 +16,15 @@
 		831BC584226C3DF800114E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831BC582226C3DF800114E8C /* LaunchScreen.storyboard */; };
 		831BC58F226C3DF800114E8C /* SmartMobeImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC58E226C3DF800114E8C /* SmartMobeImagesTests.swift */; };
 		831BC59B226C4F1D00114E8C /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC59A226C4F1D00114E8C /* Image.swift */; };
+		831BC59F226C525000114E8C /* Constants+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC59E226C525000114E8C /* Constants+Networking.swift */; };
+		831BC5A2226C531400114E8C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC5A1226C531400114E8C /* APIRequest.swift */; };
+		831BC5A4226C538B00114E8C /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC5A3226C538B00114E8C /* APIRequestHandler.swift */; };
+		831BC5A6226C53CF00114E8C /* Constants+AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC5A5226C53CF00114E8C /* Constants+AlertMessages.swift */; };
+		831BC5A8226C54DB00114E8C /* Constants_Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC5A7226C54DB00114E8C /* Constants_Numeric.swift */; };
+		831BC5AA226C553900114E8C /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC5A9226C553900114E8C /* NetworkStatus.swift */; };
+		831BC5AD226C577E00114E8C /* RealmHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC5AC226C577E00114E8C /* RealmHandler.swift */; };
+		831BC5AF226C57BE00114E8C /* ImagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC5AE226C57BE00114E8C /* ImagesHandler.swift */; };
+		831BC5B2226C59A700114E8C /* ViewControllerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BC5B1226C59A700114E8C /* ViewControllerInjector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,15 @@
 		831BC58E226C3DF800114E8C /* SmartMobeImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMobeImagesTests.swift; sourceTree = "<group>"; };
 		831BC590226C3DF800114E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		831BC59A226C4F1D00114E8C /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		831BC59E226C525000114E8C /* Constants+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Networking.swift"; sourceTree = "<group>"; };
+		831BC5A1226C531400114E8C /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		831BC5A3226C538B00114E8C /* APIRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestHandler.swift; sourceTree = "<group>"; };
+		831BC5A5226C53CF00114E8C /* Constants+AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+AlertMessages.swift"; sourceTree = "<group>"; };
+		831BC5A7226C54DB00114E8C /* Constants_Numeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants_Numeric.swift; sourceTree = "<group>"; };
+		831BC5A9226C553900114E8C /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		831BC5AC226C577E00114E8C /* RealmHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHandler.swift; sourceTree = "<group>"; };
+		831BC5AE226C57BE00114E8C /* ImagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesHandler.swift; sourceTree = "<group>"; };
+		831BC5B1226C59A700114E8C /* ViewControllerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInjector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +109,7 @@
 		831BC578226C3DF600114E8C /* SmartMobeImages */ = {
 			isa = PBXGroup;
 			children = (
+				831BC59C226C521900114E8C /* Utilities */,
 				831BC599226C4F0400114E8C /* Model */,
 				831BC579226C3DF600114E8C /* AppDelegate.swift */,
 				831BC57B226C3DF600114E8C /* ViewController.swift */,
@@ -117,6 +136,54 @@
 				831BC59A226C4F1D00114E8C /* Image.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		831BC59C226C521900114E8C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				831BC5B0226C599800114E8C /* Services */,
+				831BC5AB226C576900114E8C /* Handler */,
+				831BC5A0226C52F100114E8C /* Network */,
+				831BC59D226C522700114E8C /* Constants */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		831BC59D226C522700114E8C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				831BC59E226C525000114E8C /* Constants+Networking.swift */,
+				831BC5A5226C53CF00114E8C /* Constants+AlertMessages.swift */,
+				831BC5A7226C54DB00114E8C /* Constants_Numeric.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		831BC5A0226C52F100114E8C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				831BC5A1226C531400114E8C /* APIRequest.swift */,
+				831BC5A3226C538B00114E8C /* APIRequestHandler.swift */,
+				831BC5A9226C553900114E8C /* NetworkStatus.swift */,
+				831BC5AE226C57BE00114E8C /* ImagesHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		831BC5AB226C576900114E8C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				831BC5AC226C577E00114E8C /* RealmHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		831BC5B0226C599800114E8C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				831BC5B1226C59A700114E8C /* ViewControllerInjector.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		9AFF980FF75DA40278B1B5E1 /* Frameworks */ = {
@@ -330,9 +397,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831BC5A6226C53CF00114E8C /* Constants+AlertMessages.swift in Sources */,
+				831BC5AA226C553900114E8C /* NetworkStatus.swift in Sources */,
+				831BC5A8226C54DB00114E8C /* Constants_Numeric.swift in Sources */,
+				831BC5AF226C57BE00114E8C /* ImagesHandler.swift in Sources */,
+				831BC5B2226C59A700114E8C /* ViewControllerInjector.swift in Sources */,
 				831BC57C226C3DF600114E8C /* ViewController.swift in Sources */,
+				831BC59F226C525000114E8C /* Constants+Networking.swift in Sources */,
 				831BC59B226C4F1D00114E8C /* Image.swift in Sources */,
+				831BC5AD226C577E00114E8C /* RealmHandler.swift in Sources */,
+				831BC5A2226C531400114E8C /* APIRequest.swift in Sources */,
 				831BC57A226C3DF600114E8C /* AppDelegate.swift in Sources */,
+				831BC5A4226C538B00114E8C /* APIRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
